@@ -10,4 +10,3 @@
 60 LOCATE 11,6 : PRINT HEADS;"                        ";TAILS;"        ";TIMES
 70 LOCATE 13,5 : PRINT A;"%                         ";B;"%"
 80 GOTO 30
-

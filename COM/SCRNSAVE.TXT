@@ -1,0 +1,16 @@
+				 THE SCREEN SAVE COMMAND
+
+    Scrnsave.com is a machine-language program that attaches
+itself to DOS each time you run it; because you consume a little
+bit of memory with each attachment, you should run it only once-
+perhaps at the time you start DOS. To add Scrnsave.com to DOS and
+save your screen, just type scrnsave after the DOS prompt. 
+    Scrnsave.com will prevent the phosphor on your screen from
+erosion. After three minutes of no activity (screen output,
+keyboard signals, etc.), the screen will automatically shut
+itself off and will not turn on again until you:
+		 1)Press a key
+           2)Print something on the screen
+
+Note: It would be a good idea to include this program as part of
+your Autoexec batch file. (See the DOS manual page 3-15).
