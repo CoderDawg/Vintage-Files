@@ -1,0 +1,74 @@
+10 KEY OFF : WIDTH 80 : SCREEN 0,0,0 : COLOR 7,0 : RESTORE : CLEAR : CLS
+20 LOCATE 1,10
+30 PRINT "ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป"
+40 LOCATE 2,10
+50 PRINT "บ                                                             บ"
+60 LOCATE 3,10
+70 PRINT "บ            PROGRAM: ADVANCED D & D CHARACTER GENERATION     บ"
+80 LOCATE 4,10
+90 PRINT "บ                 CREATED BY:  John Doe (CoderDawg)           บ"
+100 LOCATE 5,10
+110 PRINT "บ                                                             บ"
+120 LOCATE 6,10
+130 PRINT "ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน"
+140 LOCATE 7,10
+150 PRINT "บ                                                             บ"
+160 LOCATE 8,10
+170 PRINT "บ                                                             บ"
+180 FOR LCV = 9 TO 20
+190    LOCATE LCV,10 : PRINT CHR$(186); SPC(61); CHR$(186)
+200 NEXT LCV
+210 LOCATE 21,10 : PRINT CHR$(200); STRING$(61,205); CHR$(188)
+220 LOCATE 7,33 : COLOR 0,7 : PRINT "<< TOGGLE MENU >>" : COLOR 7,0
+230 LOCATE 22,12 : PRINT SPC(9);"<ENTER>";SPC(11);"<SPACE>";SPC(12);CHR$(24);" ";" ";CHR$(25)
+240 LOCATE 9,20  : PRINT "OUTPUTS:  "
+250 LOCATE 10,20 : PRINT " SCREEN............     "
+260 LOCATE 11,20 : PRINT "PRINTER............     "
+270 LOCATE 12,20 : PRINT "   MODE............     "
+275 LOCATE 13,20 : PRINT "CHARCTER NAMES....     "
+280 SCRN$ = "ON" : PRNTR$ = "OFF" : MDE$ = "NONE" : NAM$ = "OFF"
+285 SCRN1 = 1 : PRNTR1 = 0 : MDE1 = 0 : NAM1 = 0
+290 FOR LCV = 10 TO 13
+300      IF LCV = 10 THEN TEMP$ = SCRN$
+310      IF LCV = 11 THEN TEMP$ = PRNTR$
+320      IF LCV = 12 THEN TEMP$ = MDE$
+330      IF LCV = 13 THEN TEMP$ = NAM$
+340      IF TEMP$ = "ON" THEN COLOR 9,0 ELSE COLOR 7,0
+350      LOCATE LCV,40 : PRINT TEMP$ : COLOR 7,0
+360 NEXT LCV
+370 OPOS = 10 : LOCATE OPOS,44 : PRINT CHR$(17)
+380 A$=INKEY$:IF A$="" THEN 380
+390 IF A$ = CHR$(13) THEN 520          'accept input
+400 IF A$ = " " THEN 1270               'Space bar
+410 IF ASC(LEFT$(A$,1))<> 0 THEN 380
+420 INKY=ASC(RIGHT$(A$,1))
+430 LOCATE OPOS,44 : PRINT " "
+435 IF INKY=72 THEN 480               'cursor up
+440 IF INKY<>80 THEN 380
+450 OPOS = OPOS + 1                   'cursor down
+460 IF OPOS>13 THEN OPOS=10
+470 GOTO 500
+480 OPOS = OPOS - 1
+490 IF OPOS<10  THEN OPOS = 13
+500 LOCATE OPOS,44 : PRINT CHR$(17)
+505 LOCATE 20,30 : PRINT OPOS
+510 GOTO 380
+520 REM input is accepted.
+1270 REM toggle display
+1271 IF OPOS = 10 AND SCRN1 = 1 THEN SCRN1 = 0  ELSE SCRN1 = 1
+1272 IF OROS = 11 AND PRNTR1 = 0 THEN PRNTR1 = 1 ELSE PRNTR1 = 0
+1273 IF OPOS = 12 AND MDE1 = 0 THEN MDE1 = 1  ELSE MDE1 = 0
+1274 IF OPOS = 13 AND NAM1 = 0 THEN NAM1 = 1  ELSE NAM1 = 0
+1280 IF OPOS = 10 AND SCRN1 = 1 THEN SCRN$ = "ON" ELSE SCRN$ = "OFF"
+1290 IF OROS = 11 AND PRNTR1 = 1 THEN PRNTR$ = "ON" ELSE PRNTR$ = "OFF"
+1300 IF OPOS = 12 AND MDE1 = 1 THEN MDE$ ="ON" ELSE MDE$ = "NONE"
+1310 IF OPOS = 13 AND NAM1 = 1 THEN NAM$ = "ON" ELSE NAM$ = "OFF"
+1311 IF OPOS = 10 THEN TEMP$ = SCRN$
+1312 IF OROS = 11 THEN TEMP$ = PRNTR$
+1313 IF OPOS = 12 THEN TEMP$ = MDE$
+1314 IF OPOS = 13 THEN TEMP$ = NAM$
+1315 LOCATE OPOS,40  : PRINT "    "
+1317 IF TEMP$ = "ON" THEN COLOR 9,0 ELSE COLOR 7,0
+1320 LOCATE OPOS,40  : PRINT TEMP$
+1325 COLOR 7,0
+1330 GOTO 380
