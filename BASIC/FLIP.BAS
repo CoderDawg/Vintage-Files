@@ -1,0 +1,13 @@
+10 CLS
+15 RANDOMIZE VAL(RIGHT$(TIME$,2))+INT(RND(1)*4000)
+20 HEADS = 0 : TAILS = 0 : TIMES = 0
+30 FLIP = INT (RND * (2) + 1)
+35 TIMES = TIMES + 1
+40 IF FLIP = 1 THEN HEADS = HEADS + 1
+42 IF FLIP = 2 THEN TAILS = TAILS + 1
+45 A = INT (100 *(HEADS/TIMES))   :        B = INT (100 *(TAILS/TIMES))
+50 LOCATE 10,5 : PRINT "HEADS                       TAILS         TOTAL"
+60 LOCATE 11,6 : PRINT HEADS;"                        ";TAILS;"        ";TIMES
+70 LOCATE 13,5 : PRINT A;"%                         ";B;"%"
+80 GOTO 30
+
