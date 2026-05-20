@@ -4,4 +4,3 @@
 20 IF A$="" THEN GOTO 10
 30 PRINT A$;" / ";ASC(A$)
 40 GOTO 10
-

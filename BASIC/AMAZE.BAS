@@ -78,4 +78,3 @@
 1100 IF B$="" THEN RETURN
 1105 LOCATE 25,1:PRINT "                                ";
 1110 DEF SEG=&HB800:BSAVE B$,0,&H4000:RETURN
-
