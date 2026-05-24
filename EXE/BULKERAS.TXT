@@ -1,0 +1,26 @@
+
+	    BULK ERASE PROGRAM DOCUMENTATION
+
+Some software protection schemes rely on the non-
+existance of correctly formatted sectors on certain
+tracks.  Since Copy ][ PC does not remove existing
+sectors on unused tracks on the target disk, it is
+possible a diskette will not work when copied with 
+Copy ][ PC if it was copied over a previously used
+diskette.  This BULK ERASE utility will completely
+erase a diskette, thereby preparing it for Copy ][ PC.
+
+Instructions:
+
+To use BULKERASE, type the following from the DOS A>:
+
+  BULKERAS [x:] [/B]
+ 
+       x: = The drive in which you will place the diskette to
+	    be erased.
+       /B = If both sides are to be erased, this operand is to
+	    be entered. The default is side 0 only. You will
+	    notice additional prompts when exercising a two-sided
+	    erasure for extra protection.
+ault is side 0 only. You will
+	   
