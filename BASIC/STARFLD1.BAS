@@ -1,7 +1,7 @@
 10 KEY OFF : WIDTH 80 : SCREEN 0,0,0 : COLOR 7,0 : RESTORE : CLEAR : CLS
 20 'ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
 30 'º                                                             º
-40 'º            PROGRAM: HEADER FOR THE IBM PC.                  º
+40 'º          PROGRAM: STAR FIELD FOR THE IBM PC.                º
 50 'º            CREATED BY:  John Doe (CoderDawg)                º
 60 'º                        (C) 1981                             º
 70 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
