@@ -45,7 +45,7 @@ This collection is shared for:
 
 ### Authenticity
 
-Files are generally preserved in their original form whenever possible.
+Files are generally preserved in their original form whenever possible with a few exceptions.
 
 Some strange formatting, unconventional coding styles, and cryptic filenames are part of the original historical context.
 
@@ -72,7 +72,7 @@ Digital history is fragile.
 
 Many early programs, documents, and experiments disappeared long before widespread internet archiving existed. Collections like this help preserve a small part of that history for future enthusiasts, historians, and researchers.
 
-If you recognize authorship, platforms, or historical context for any unidentified files, contributions and additional information are always welcome.
+If you recognize authorship, platforms, or historical context for any unidentified files, contributions and additional information is always welcome.
 
 ### License
 
